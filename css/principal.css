@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --cor-primaria: #915858;
+    --bg-color: #ffffff;
+    --bg-form: #faf9f9;
+}
+
+* {
+    margin: 10;
+    padding: 0;
+    
+    font-family: "Koh Santepheap";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* TÍTULO */
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: rgb(0, 0, 0);
+    font-weight: Koh Santepheap;
+}
+
+/* Cabeçalho e navegação */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-left: 20px;
+}
+
+a{
+    display: flex;
+    color: rgb(250, 250, 250);
+    font-size: 1.2rem;
+    font-weight: Koh Santepheap;
+    text-decoration: none;
+    text-align:center; 
+}
+
+header{
+    width: 100%;
+    height: 6vh;
+    background-color: #ffffff; 
+    justify-content: space-between;
+}
+
+/* Estrutura principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+    background-color: var(--bg-form);
+    margin: 2rem auto;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+.quote-section {
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+}
+
+.quote {
+    font-size: 4rem;
+    font-weight: Koh Santepheap;
+    color: var(--cor-primaria);
+    margin-bottom: 0.5rem;
+}
+
+.author {
+    font-size: 1.2rem;
+    color: var(--cor-primaria);
+    text-align: right;
+    margin-top: 0.5rem;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Painel de links */
+.painel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 6rem;
+}
+
+.esquerda, 
+.meio, 
+.direita {
+    width: 44%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-primaria);
+    color: white;
+    height: 70%;
+    width: 30%;
+    border-radius: 2px;
+}
+
+div a {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.meio h1 {
+    margin: 0;
+}

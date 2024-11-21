@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Emprestimos</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/navegacao.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">INICIO</a>
+            <a href="listaAluno.html">ALUNO</a>
+            <a href="listarEmprestimos.html">EMPRESTIMOS</a>
+            <a href="listarLivros.html">LIVROS</a>
+        </nav>
+    </header>
+    <h1>CADASTRO DOS EMPRESTIMOS</h1>
+    <div class="container-formulario">
+        <form action="">
+            <label>
+                Nome Aluno
+                <br>
+                <input type="text" name="input-nome-aluno" placeholder="Insira o nome do aluno" required>
+            </label>
+            <label>
+                Livro Emprestado
+                <br>
+                <input type="text" name="input-livro-emprestado" placeholder="Insira o nome do livro emprestado" required>
+            </label>
+            <label>
+                Data Emprestimo
+                <br>
+                <input type="date" name="input-data-emprestimo" placeholder="Insira a data do emprestimo" required>
+            </label>
+
+            <label>
+                Data de Devolução
+                <br>
+                <input type="date" name="input-data-devolucao" placeholder="Insira a data de devolução">
+            </label>
+            
+            <input type="button" value="CADASTRAR">
+        </form>
+    </div>
+</body>
+
+</html>

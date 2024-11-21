@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Pedido</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/navegacao.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">INICIO</a>
+            <a href="listaAluno.html">ALUNO</a>
+            <a href="listarEmprestimos.html">EMPRESTIMOS</a>
+            <a href="listarLivros.html">LIVROS</a>
+        </nav>
+    </header>
+    <h1>CADASTRO DOS LIVROS</h1>
+    <div class="container-formulario">
+        <form action="">
+            <label>
+                Título
+                <br>
+                <input type="text" name="input-titulo" placeholder="Informe o título do livro" required>
+            </label>
+            <label>
+               Editora
+                <br>
+                <input type="text" name="input-editora" placeholder="Informe a editora do livro" required>
+            </label>
+            <label>
+               Data do emprestimo
+                <br>
+                <input type="date" name="input-data-pedido" placeholder="Informe a data o livro" required>
+            </label>
+            <label>
+                Valor Total dos livros
+                <br>
+                <input type="number" name="input-valor-pedido" placeholder="Informe o valor do pedido" required>
+            </label>
+
+            <input type="button" value="CADASTRAR">
+        </form>
+    </div>
+</body>
+
+</html>
