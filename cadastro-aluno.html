@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Aluno</title>
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/navegacao.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">INICIO</a>
+            <a href="listar-aluno.html">ALUNO</a>
+            <a href="listar-emprestimos.html">EMPRESTIMOS</a>
+            <a href="listar-livros.html">LIVROS</a>
+        </nav>
+    </header>
+    <h1>CADASTRO DE ALUNO</h1>
+    <div class="container-formulario">
+        <form id="form-aluno">
+            <label>
+                Nome Completo
+                <br>
+                <input type="text" name="input-nome-completo" placeholder="Informe seu nome completo" required>
+            </label>
+            <label>
+                Telefone
+                <br>
+                <input type="number" name="input-telefone" placeholder="Informe seu telefone" required>
+            </label>
+            <label>
+                Endereço
+                <br>
+                <input type="text" name="input-endereco" placeholder="Informe seu endereço" required>
+            </label>
+            <input type="button" value="CADASTRAR" onclick="enviaFormulario()">
+        </form>
+    </div>
+
+    <script>
+        function enviaFormulario() {
+            const form = document.getElementById('form-aluno');
+            const formData = new FormData(form);
+            const alunoData = {};
+            formData.forEach((value, key) => {
+                alunoData[key] = value;
+            });
+
+            fetch('/api/alunos', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(alunoData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Aluno cadastrado com sucesso!');
+                form.reset();
+            })
+            .catch(error => {
+                alert('Erro ao cadastrar aluno!');
+                console.error('Erro:', error);
+            });
+        }
+    </script>
+</body>
+</html>

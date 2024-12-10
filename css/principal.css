@@ -3,12 +3,12 @@
 :root {
     --cor-primaria: #915858;
     --bg-color: #ffffff;
-    --bg-form: #faf9f9;
+    --bg-form: #ffffff;
 }
 
 * {
-    margin: 10;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     
     font-family: "Koh Santepheap";
     font-optical-sizing: auto;
@@ -135,5 +135,5 @@ div a {
 }
 
 .meio h1 {
-    margin: 0;
+    margin: 0%;
 }
